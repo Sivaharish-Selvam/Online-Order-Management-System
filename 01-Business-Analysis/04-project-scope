@@ -1,0 +1,45 @@
+## Project Scope
+
+### In Scope
+
+* Automated online ordering of products through this portal.
+* Product search is available through the product directory, allowing users to view the list of products and their availability for ordering.
+* Stock-available products can be moved to the cart for later purchase.
+* Users can place orders to purchase products, which leads to the payment portal.
+* Once payments are completed, an order summary is created and shared both in the portal and through email.
+* Track order details through this portal.
+* Apply for product refunds/returns through this portal.
+* Every action is monitored and updated both in the portal and through the user's email.
+
+### Out of Scope
+
+* Product manufacturing and production management.
+* Managing supplier and vendor information.
+* Warehouse and inventory management.
+* Managing delivery partner operations.
+* Customer support through phone calls or live chat.
+* Product pricing and discount management.
+* Marketing and promotional activities.
+* Managing customer personal information outside the ordering process.
+
+### Assumptions
+
+* The product listing directory is available at the client's end.
+* The payment portal and payment gateway are available at the client's end.
+* Store and shipment details are available at the client's end.
+
+### Constraints
+
+* Limited development time for implementing the online ordering portal.
+* Dependence on existing product, payment, store, and shipment details available at the client end.
+* Dependence on the existing payment portal and payment gateway.
+* Limited resources for development and implementation.
+
+### High-Level Milestones
+
+| Milestone                          | Target Date      |
+| ---------------------------------- | ---------------- |
+| Requirements sign-off              | End of September |
+| Portal development and integration | End of November  |
+| Testing and user validation        | End of December  |
+| Go-live                            | Mid of February  |
