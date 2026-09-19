@@ -24,17 +24,17 @@ The Business Analysis phase covers:
 The following sections will be developed as part of this project:
 
 1. **Business Analysis** — Completed
-2. **Requirements** — Upcoming
-3. **Process Analysis** — Upcoming
-4. **Traceability** — Upcoming
-5. **Testing & Sign-off** — Upcoming
+2. **Requirements** — Completed
+3. **Process Analysis** — Completed
+4. **Traceability** — Completed
+5. **Testing & Sign-off** — Completed
 
 ## Project Status
 
 | Phase              | Status    |
 | ------------------ | --------- |
 | Business Analysis  | Completed |
-| Requirements       | Upcoming  |
-| Process Analysis   | Upcoming  |
-| Traceability       | Upcoming  |
-| Testing & Sign-off | Upcoming  |
+| Requirements       | Completed |
+| Process Analysis   | Completed |
+| Traceability       | Completed |
+| Testing & Sign-off | Completed |
