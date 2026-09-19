@@ -1,0 +1,34 @@
+# Process Flow Diagram
+
+## Online Order Management System: To-Be Flow
+
+```text
+START
+  ↓
+Customer Login
+  ↓
+Search & Select Product
+  ↓
+Select Quantity & Check Availability
+  ↓
+Buy Now or Add to Cart?
+  ├── Add to Cart → Product Added to Cart ──┐
+  └── Buy Now ──────────────────────────────┤
+                                            ↓
+                                  Delivery Information
+                                            ↓
+                                      Online Payment
+                                            ↓
+                                  Order Placed & Order ID
+                                            ↓
+                              Store & Delivery Partner Notified
+                                            ↓
+                                  Order Processed & Delivered
+                                            ↓
+                                      Status Updated
+                                            ↓
+                                  Return / Refund Request
+                                            ↓
+                                  Return / Refund Processed
+                                            ↓
+                                           END

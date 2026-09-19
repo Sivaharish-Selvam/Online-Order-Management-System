@@ -1,0 +1,33 @@
+# Functional Requirements Document (FRD)
+
+| **ID** | **Functional Requirement** | **Related BR** |
+|---|---|---|
+| FR-01 | The system shall list products based on product category and trending sales. | BR-02 |
+| FR-02 | The system shall allow users to navigate to the product page using the search bar or product category. | BR-02 |
+| FR-03 | The system shall allow users to view products without logging in. | BR-01 |
+| FR-04 | The system shall allow users to create an account using their name, phone number, and OTP verification. | BR-01 |
+| FR-05 | The system shall allow only logged-in users to purchase products. | BR-01 |
+| FR-06 | The system shall allow users to add products to the cart for later purchase. | BR-02 |
+| FR-07 | The system shall allow users to select the required quantity and view product details. | BR-03 |
+| FR-08 | The system shall allow users to purchase only products that are in stock. | BR-01 |
+| FR-09 | The system shall disable the Add to Cart and Buy options for out-of-stock products. | BR-03 |
+| FR-10 | The system shall navigate the user to the product overview page and allow the user to selects the **Buy** option. | BR-04 |
+| FR-11 | The system shall allow users to review the selected quantity, delivery time, price, and other order details before proceeding with the purchase. | BR-03 |
+| FR-12 | The system shall allow users to enter their delivery address, name, and phone number. The system shall automatically populate the name and phone number from the user's account details. | BR-04 |
+| FR-13 | The system shall navigate the user to the payment gateway after the user confirms the delivery information. | BR-05 |
+| FR-14 | The system shall place the order after successful payment. | BR-05 |
+| FR-15 | The system shall display the order summary in the application and share the order summary with the user and Store Executive. | BR-06 |
+| FR-16 | The system shall notify the Store Executive and Delivery Partner when an order is placed and requires packing and delivery. | BR-06 |
+| FR-17 | The system shall allow users to track their order by entering the order ID from the order summary in the **Tracking** tab. | BR-07 |
+| FR-18 | The system shall display the current delivery status of the order to the user. | BR-07 |
+| FR-19 | The system shall update the order status to **Delivered** after the product is delivered to the user. | BR-07 |
+| FR-20 | The system shall return an undelivered product to the store when the user is unavailable to receive the delivery. | BR-08 |
+| FR-21 | The system shall allow the undelivered product to be reattempted for delivery on the following day. | BR-08 |
+| FR-22 | The system shall cancel the order if the user remains unavailable after the specified delivery attempts. | BR-08 |
+| FR-23 | The system shall handle refund eligibility for cancelled orders according to the applicable refund policy. | BR-08 |
+| FR-24 | The system shall allow users to raise a return or refund request through the option available below the purchased product. | BR-08 |
+| FR-25 | The system shall allow users to provide a reason when raising a return or refund request. | BR-08 |
+| FR-26 | The system shall notify the Store Executive and Delivery Partner when a return or refund request is raised. | BR-08 |
+| FR-27 | The Store Executive and Delivery Partner shall review the return or refund request and take the necessary action according to the applicable policy. | BR-08 |
+| FR-28 | The system shall process the return or refund within the applicable policy period. | BR-08 |
+| FR-29 | The system shall allow users to track refund in existing product tracking method. | BR-09 |

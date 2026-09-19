@@ -1,0 +1,197 @@
+# User Stories
+
+## US-01 Online Product Purchase
+
+As a customer, I want to buy products online using the application without manual intervention or a customer support call.
+
+### Acceptance Criteria
+
+- Customer can search and select a product.
+- Customer can click the Buy option.
+- Customer can complete the payment.
+- After successful payment, the order shall be placed.
+
+---
+
+## US-02 Account Creation and Login
+
+As a customer, I want to create an account using my name, email ID, phone number, and verification code so that I can log in and purchase products.
+
+### Acceptance Criteria
+
+- User can create an account using a valid name, email ID, phone number, and verification code.
+- User can log in using valid login credentials.
+- If the password is incorrect, the user can select Change Password.
+- The system shall ask for the registered email ID and verification code.
+- User can create a new password after successful verification.
+- User can log in using the newly created password.
+
+---
+
+## US-03 Product Search and Category Navigation
+
+As a customer, I want to search for products using the search bar and navigate through categories so that I can find products to purchase.
+
+### Acceptance Criteria
+
+- User can search for a product using a keyword.
+- User can search for a product using a model number.
+- User can navigate through product categories.
+- The system shall display relevant products based on the search or selected category.
+
+---
+
+## US-04 Add Product to Cart
+
+As a customer, I want to add a product to my cart so that I can purchase it later.
+
+### Acceptance Criteria
+
+- User can click the Add to Cart button on the product page.
+- The selected product shall be added to the cart.
+- The added product shall be available under My Cart in the user's account.
+
+---
+
+## US-05 Product Quantity and Availability
+
+As a customer, I want to select the quantity and check product availability so that I can purchase an available product.
+
+### Acceptance Criteria
+
+- The system shall display the availability status of the product.
+- In-stock products shall have the Add to Cart and Buy options enabled.
+- Out-of-stock products shall have the Add to Cart and Buy options disabled.
+- User can select the required quantity.
+- User can click the Buy option to purchase the product.
+
+---
+
+## US-06 Delivery Address
+
+As a customer, I want to provide my delivery address so that the product can be delivered to my address.
+
+### Acceptance Criteria
+
+- User can enter a valid name.
+- User can enter a valid delivery address.
+- User can enter a valid phone number.
+- Name and phone number shall be automatically populated from the user's account details.
+- User can review the delivery information.
+- User can submit the delivery information and proceed to the payment page.
+
+---
+
+## US-07 Online Payment and Order Summary
+
+As a customer, I want to make an online payment so that I can complete my product purchase and receive the order details.
+
+### Acceptance Criteria
+
+- User can click the Pay option.
+- The system shall navigate the user to the payment portal.
+- User can complete the payment through the payment portal.
+- If the payment is successful, the system shall display a Payment Successful message.
+- The order shall be placed only after successful payment.
+- The system shall display the order summary after successful payment and order placement.
+- The order summary shall be shared with the user's registered email ID.
+- If the payment is unsuccessful due to issues such as a server failure, payment service failure, or bank server unavailability, the system shall not place the order.
+- The system shall display an appropriate Payment Failed/Error message.
+- The user shall be redirected to the Delivery Address page to retry the payment process.
+
+---
+
+## US-08 Order Processing Notification
+
+As a customer, I want the Store Executive and Delivery Partner to be notified after my order is placed so that the order can be processed and delivered.
+
+### Acceptance Criteria
+
+- The system shall notify the Store Executive immediately after the order is placed.
+- The system shall notify the Delivery Partner immediately after the order is placed.
+- The Store Executive shall receive the order details required for packing.
+- The Delivery Partner shall receive the order details required for delivery.
+- Order processing shall start after the order is placed.
+
+---
+
+## US-09 Order Tracking
+
+As a customer, I want to track my order so that I can know the current delivery status of my product.
+
+### Acceptance Criteria
+
+- User can obtain the order ID from the order summary.
+- User can open the Tracking tab.
+- User can enter the order ID.
+- The system shall display the current delivery status of the order.
+- The delivery status can include:
+  - In Store
+  - Shipped
+  - Out for Delivery
+  - Delivered
+
+---
+
+## US-10 Delivery Status Update
+
+As a customer, I want the order status to be updated during the delivery process so that I can know the current status of my product.
+
+### Acceptance Criteria
+
+- The Delivery Partner shall update the delivery status based on the current delivery stage.
+- The Store Executive shall be able to view the updated delivery status.
+- The customer shall be able to view the updated delivery status.
+- The system shall update the order status to Delivered after successful delivery.
+- Relevant status updates shall be notified to the Store Executive and Delivery Partner.
+- If the product is Out for Delivery and the customer is not available at the delivery address, the Delivery Partner shall attempt to contact the customer.
+- If the customer does not respond to the call or is unavailable at the delivery address, delivery shall be reattempted on the next one or two consecutive days according to the applicable delivery process.
+- If the customer remains unavailable and there is no response after the specified delivery attempts, the product shall be returned to the store.
+- The system shall cancel the order after the product is returned to the store.
+- The payment shall not be refunded for an order cancelled due to the customer's unavailability after the specified delivery attempts.
+
+---
+
+## US-11 Return Refund or Exchange
+
+As a customer, I want to request a return, refund, or exchange for an eligible product when I receive a damaged, incorrect, or unsatisfactory product.
+
+### Acceptance Criteria
+
+- User can select the Return/Refund option available below the purchased product.
+- The system shall check whether the product is within the eligible return/refund period.
+- If the product is outside the eligible return/refund period, the system shall display a message such as "Product is not eligible for return or refund because the eligible period has expired."
+- If the product is eligible, the system shall navigate the user to the Return/Refund page.
+- User can select an option such as:
+  - Return
+  - Refund
+  - Exchange
+- User can provide a reason for the return, refund, or exchange.
+- User can upload a photo as supporting evidence when required, such as for a damaged or incorrect product.
+- The system shall submit the request.
+- The system shall notify the Store Executive and Delivery Partner about the request.
+- The Store Executive shall review and approve/reject the request according to the applicable policy.
+- After approval, the Delivery Partner shall collect the product from the customer's address when required.
+- The returned product shall be checked by the Delivery Partner and Store Executive.
+- If the request is verified, the Store Executive shall process the applicable return, refund, or exchange.
+
+---
+
+## US-12 Return Refund Status Tracking
+
+As a customer, I want to check the status of my return or refund request so that I can know the current status of my request.
+
+### Acceptance Criteria
+
+- User can open the Tracking tab.
+- User can enter the order ID from the order summary.
+- The system shall display the current return/refund status.
+- The status can include:
+  - Return/Refund Requested
+  - Request Approved
+  - Product Collection Pending
+  - Product Received
+  - Refund Processing
+  - Refund Provided
+  - Exchange Completed
+- The system shall update the status when the request moves to the next stage.

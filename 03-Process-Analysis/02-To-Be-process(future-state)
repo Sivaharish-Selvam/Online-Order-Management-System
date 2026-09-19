@@ -1,0 +1,69 @@
+# To-Be Process (Future State)
+
+## Process Overview
+
+The proposed future state introduces an online Order Management System that allows customers to independently search, purchase, track, and request returns or refunds through the website.
+
+## TO-BE Process Flow
+
+1. Customer logs into the website using valid credentials.
+2. Customer views the available products using a mobile device or desktop.
+3. Customer searches for the required product or navigates through the category hierarchy.
+4. Customer selects the preferred product.
+5. System displays the product details, price, quantity, and availability.
+6. Customer selects the required quantity.
+7. Customer selects **Buy Now** to purchase the product immediately or selects **Add to Cart** to purchase it later.
+8. For a Buy Now purchase, customer navigates to the **Delivery Address** section.
+9. Customer provides a valid name, delivery address, phone number, and ZIP/PIN code.
+10. Customer selects the **Payment** option.
+11. System redirects the customer to the integrated Payment Gateway.
+12. Customer completes the online payment.
+13. Payment Gateway confirms the successful payment.
+14. System creates the order and generates a unique Order ID.
+15. System displays the Order Summary to the customer.
+16. System sends the order notification to the Store Executive and Delivery Partner.
+17. Store Executive processes and prepares the order.
+18. Delivery Partner receives the delivery details and delivers the product to the customer's provided address.
+19. Store Executive or Delivery Partner updates the applicable order status.
+20. System updates the order status on the website.
+21. Customer can navigate to the **Tracking** section and enter the Order ID to view the current order status.
+22. After receiving the product, customer can raise a **Return/Refund** request for an eligible product.
+23. Customer submits the required return/refund details through the application.
+24. System notifies the Store Executive and Delivery Partner about the request.
+25. Store Executive and Delivery Partner review and process the request according to the applicable return/refund process.
+26. System updates the return/refund status.
+27. Customer can track the return/refund status through the existing **Tracking** option.
+
+## Expected Improvements
+
+### 1. Reduced Manual Work
+
+Customers can independently search, select, purchase, and track products without depending on Customer Service Executives for every transaction.
+
+### 2. Faster Order Processing
+
+Online product selection, delivery information, and payment reduce the manual steps involved in order placement.
+
+### 3. Improved Order Handling During Peak Periods
+
+The online system can allow multiple customers to place orders simultaneously without requiring each order to be handled manually by a Customer Service Executive.
+
+### 4. Reduced Dependency on Additional Staffing
+
+The system reduces the need to increase Customer Service staffing solely to handle higher order volumes.
+
+### 5. Improved Data Accuracy
+
+Customers enter their own product selection, quantity, delivery details, and other information directly into the system, reducing errors associated with voice-based communication.
+
+### 6. Improved Customer Transparency
+
+Customers can independently view their Order Summary and track the current order status.
+
+### 7. Improved Online Engagement
+
+Customers can search products, check availability and prices, purchase products, and manage return/refund requests through the website.
+
+### 8. End-to-End Online Visibility
+
+The customer can follow the order lifecycle from product selection through payment, delivery, tracking, and eligible return/refund processing.

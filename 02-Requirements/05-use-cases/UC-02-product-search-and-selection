@@ -1,0 +1,57 @@
+# UC-02 Product Search and Selection
+
+## Use Case ID
+UC-02
+
+## Use Case Name
+Product Search and Selection
+
+## Description
+This use case describes how a customer searches for a product or navigates through the category hierarchy, selects a product, chooses the required quantity, and checks its availability.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has successfully logged in.
+- Product directory has been successfully updated in the application.
+
+## Trigger
+Customer wants to find a product for purchase.
+
+## Main Flow
+1. Customer navigates to the product section.
+2. Customer searches for a product using the search option or navigates through the category hierarchy.
+3. System displays the relevant products.
+4. Customer selects the required product.
+5. Customer selects the required quantity.
+6. System displays the availability status of the selected product.
+7. If the product is in stock, the system enables the **Buy Now** and **Add to Cart** options.
+8. Customer selects **Buy Now** to proceed directly with the purchase or selects **Add to Cart** to add the product to the cart.
+
+## Alternate Flow
+
+### A1: Product Out of Stock
+1. Customer selects an out-of-stock product.
+2. System displays the product as **Out of Stock**.
+3. System disables the **Buy Now** option.
+4. System disables the **Add to Cart** option.
+5. Customer searches for or selects another available product.
+
+### A2: Product Not Found
+1. Customer searches for a product.
+2. System does not find a matching product.
+3. System displays an appropriate message.
+4. Customer searches using another keyword or navigates through the category hierarchy.
+
+## Postconditions
+- Customer selects an available product for purchase.
+- Selected product can be added to the cart or purchased directly.
+- Out-of-stock products cannot be purchased or added to the cart.
+
+## Business Rules
+- Only in-stock products can be purchased or added to the cart.
+- **Buy Now** and **Add to Cart** must be disabled for out-of-stock products.

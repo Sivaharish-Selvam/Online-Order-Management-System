@@ -1,0 +1,10 @@
+# Stakeholder Approval Log
+
+| **Document** | **Stakeholder** | **Role** | **Status** |
+|---|---|---|---|
+| Business Problem & Objective | Project Sponsor | Executive Sponsor | Pending |
+| BRD / Business Requirements | Store Representative | Process Owner | Pending |
+| BRD / Business Requirements | Payment Representative | Process Owner | Pending |
+| FRD | Technical Representative | Technical Owner | Pending |
+| RTM | Business Analyst | Facilitator | Complete |
+| Acceptance Criteria | Store Representative | Process Owner | Pending |

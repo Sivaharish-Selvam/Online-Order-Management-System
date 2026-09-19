@@ -1,0 +1,17 @@
+# Non-Functional Requirements
+
+- **NFR-01:** The system shall complete login within 1 minute.
+- **NFR-02:** The system shall display product search results within 1 minute.
+- **NFR-03:** The system shall complete the Add to Cart operation within 1 minute.
+- **NFR-04:** The system shall navigate from the Buy option to the Delivery Address page within 1 minute.
+- **NFR-05:** The system shall navigate to the Payment Portal within 1 minute.
+- **NFR-06:** The system shall display the Order Placed confirmation within 1 minute after successful payment.
+- **NFR-07:** The system shall display the Order Summary within 1 minute after order placement.
+- **NFR-08:** The system shall share order details with the Store Executive within 1 minute.
+- **NFR-09:** The system shall notify the Delivery Partner within 1 minute after order placement.
+- **NFR-10:** The system shall update the product/order status within 1 minute of a status change.
+- **NFR-11:** The system shall process the Return/Refund request within 1 minute.
+- **NFR-12:** The system shall update the Return/Refund status within 1 minute of a status change.
+- **NFR-13:** The system shall support access through desktop and mobile devices.
+- **NFR-14:** The system shall support the management of 50,000+ user accounts.
+- **NFR-15:** The system shall handle payment data according to the existing payment security policy.

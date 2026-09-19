@@ -1,0 +1,13 @@
+# Requirements Traceability Matrix (RTM)
+
+| **Req ID** | **Requirement** | **Functional Req** | **Use Case/Story** | **Test/AC** | **Status** |
+|---|---|---|---|---|---|
+| BR-01 | Customer can log in to portal using valid credentials. | FR-03, FR-04, FR-05 | UC-01 / US-02 | AC-02-01 to AC-02-06 | Draft |
+| BR-02 | Customer can search and purchase products online. | FR-01, FR-02, FR-06 | UC-02, UC-03, UC-04 / US-01, US-03, US-04 | AC-01-01 to AC-01-04 | Draft |
+| BR-03 | Customer can choose product quantity and, based on availability, can purchase a product. | FR-07, FR-08, FR-09, FR-11 | UC-02, UC-04 / US-05 | AC-05-01 to AC-05-04 | Draft |
+| BR-04 | Customer can provide name, delivery address and phone number during checkout. | FR-10, FR-12 | UC-04 / US-06 | AC-06-01 to AC-06-03 | Draft |
+| BR-05 | Customer can make online payments for purchases. | FR-13, FR-14 | UC-05 / US-07 | AC-07-01 to AC-07-04 | Draft |
+| BR-06 | Customer can view order summary after purchase. | FR-15, FR-16 | UC-04 / US-07, US-08 | AC-07-05, AC-08-01 to AC-08-02 | Draft |
+| BR-07 | Customer can track orders using Order ID. | FR-17, FR-18, FR-19 | UC-07 / US-09, US-10 | AC-09-01 to AC-09-03 | Draft |
+| BR-08 | Customer can request product return/refund. | FR-20 to FR-28 | UC-08, UC-09 / US-10, US-11 | AC-10-01 to AC-10-09 | Draft |
+| BR-09 | Customer can view return/refund status with existing order ID. | FR-29 | UC-09 / US-12 | AC-12-01 to AC-12-02 | Draft |

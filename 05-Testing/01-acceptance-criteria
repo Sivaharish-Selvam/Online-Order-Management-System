@@ -1,0 +1,671 @@
+# Acceptance Criteria
+
+## US-01 Online Product Purchase
+
+### AC-01-01
+
+**Given:** the customer is viewing the product list.
+
+**When:** the customer searches for and selects a product.
+
+**Then:** the system should display the selected product.
+
+### AC-01-02
+
+**Given:** the customer has selected a product.
+
+**When:** the customer clicks the "Buy" option.
+
+**Then:** the system should proceed with the purchase process.
+
+### AC-01-03
+
+**Given:** the customer has selected a product and proceeded with the purchase.
+
+**When:** the customer completes the payment.
+
+**Then:** the system should process the payment.
+
+### AC-01-04
+
+**Given:** the customer has completed a successful payment.
+
+**When:** the payment is confirmed.
+
+**Then:** the system should place the order.
+
+---
+
+## US-02 Account Creation and Login
+
+### AC-02-01
+
+**Given:** the customer does not have an account.
+
+**When:** the customer enters valid account details and completes the verification code.
+
+**Then:** the system should create the customer account.
+
+### AC-02-02
+
+**Given:** the customer has a registered account.
+
+**When:** the customer enters valid login credentials.
+
+**Then:** the system should allow the customer to log in.
+
+### AC-02-03
+
+**Given:** the customer enters an incorrect password.
+
+**When:** the customer selects "Change Password".
+
+**Then:** the system should start the password change process.
+
+### AC-02-04
+
+**Given:** the customer has selected the password change option.
+
+**When:** the customer provides the registered email ID.
+
+**Then:** the system should request the verification code.
+
+### AC-02-05
+
+**Given:** the customer has provided the registered email ID and valid verification code.
+
+**When:** the customer enters a new password.
+
+**Then:** the system should allow the customer to create the new password.
+
+### AC-02-06
+
+**Given:** the customer has successfully created a new password.
+
+**When:** the customer logs in using the newly created password.
+
+**Then:** the system should allow the customer to log in.
+
+---
+
+## US-03 Product Search and Category Navigation
+
+### AC-03-01
+
+**Given:** the customer is on the product search page.
+
+**When:** the customer enters a keyword.
+
+**Then:** the system should search for products matching the keyword.
+
+### AC-03-02
+
+**Given:** the customer is on the product search page.
+
+**When:** the customer enters a model number.
+
+**Then:** the system should search for products matching the model number.
+
+### AC-03-03
+
+**Given:** the customer is viewing the product categories.
+
+**When:** the customer selects a category.
+
+**Then:** the system should display the products under that category.
+
+### AC-03-04
+
+**Given:** the customer has searched for a product or selected a category.
+
+**When:** the search or category selection is completed.
+
+**Then:** the system should display the relevant products.
+
+---
+
+## US-04 Add Product to Cart
+
+### AC-04-01
+
+**Given:** the customer is viewing an available product.
+
+**When:** the customer clicks "Add to Cart".
+
+**Then:** the system should add the selected product to the cart.
+
+### AC-04-02
+
+**Given:** the customer has selected a product.
+
+**When:** the customer clicks "Add to Cart".
+
+**Then:** the selected product should be added to the cart.
+
+### AC-04-03
+
+**Given:** a product has been added to the cart.
+
+**When:** the customer opens "My Cart".
+
+**Then:** the added product should be displayed in the cart.
+
+---
+
+## US-05 Product Quantity and Availability
+
+### AC-05-01
+
+**Given:** the customer is viewing a product.
+
+**When:** the product availability is checked.
+
+**Then:** the system should display the product availability.
+
+### AC-05-02
+
+**Given:** a product is in stock.
+
+**When:** the customer views the product.
+
+**Then:** the "Add to Cart" and "Buy" options should be enabled.
+
+### AC-05-03
+
+**Given:** a product is out of stock.
+
+**When:** the customer views the product.
+
+**Then:** the "Add to Cart" and "Buy" options should be disabled.
+
+### AC-05-04
+
+**Given:** the product is available for purchase.
+
+**When:** the customer selects the required quantity.
+
+**Then:** the system should allow the customer to select the required quantity.
+
+### AC-05-05
+
+**Given:** the product is available and the required quantity has been selected.
+
+**When:** the customer clicks "Buy".
+
+**Then:** the system should proceed with the purchase process.
+
+---
+
+## US-06 Delivery Address
+
+### AC-06-01
+
+**Given:** the customer is on the delivery information page.
+
+**When:** the customer enters a valid name.
+
+**Then:** the system should accept the name.
+
+### AC-06-02
+
+**Given:** the customer is on the delivery information page.
+
+**When:** the customer enters a valid delivery address.
+
+**Then:** the system should accept the delivery address.
+
+### AC-06-03
+
+**Given:** the customer is on the delivery information page.
+
+**When:** the customer enters a valid phone number.
+
+**Then:** the system should accept the phone number.
+
+### AC-06-04
+
+**Given:** the customer has registered account details.
+
+**When:** the customer opens the delivery information page.
+
+**Then:** the system should populate the name and phone number from the account details.
+
+### AC-06-05
+
+**Given:** the customer has entered the delivery information.
+
+**When:** the customer reviews the information.
+
+**Then:** the system should display the delivery information for review.
+
+### AC-06-06
+
+**Given:** the customer has entered and reviewed the delivery information.
+
+**When:** the customer submits the delivery information.
+
+**Then:** the system should allow the customer to proceed to payment.
+
+---
+
+## US-07 Online Payment and Order Summary
+
+### AC-07-01
+
+**Given:** the customer has completed the delivery information.
+
+**When:** the customer clicks "Pay".
+
+**Then:** the system should start the payment process.
+
+### AC-07-02
+
+**Given:** the customer has selected the payment option.
+
+**When:** the customer proceeds with payment.
+
+**Then:** the system should navigate to the payment portal.
+
+### AC-07-03
+
+**Given:** the customer is on the payment portal.
+
+**When:** the customer completes the payment.
+
+**Then:** the system should process the payment.
+
+### AC-07-04
+
+**Given:** the payment has been successfully processed.
+
+**When:** the payment confirmation is received.
+
+**Then:** the system should display "Payment Successful".
+
+### AC-07-05
+
+**Given:** the customer has completed the payment successfully.
+
+**When:** the payment is confirmed.
+
+**Then:** the system should place the order.
+
+### AC-07-06
+
+**Given:** the order has been successfully placed.
+
+**When:** the payment is confirmed.
+
+**Then:** the system should display the order summary.
+
+### AC-07-07
+
+**Given:** the order has been successfully placed.
+
+**When:** the order summary is generated.
+
+**Then:** the system should share the order summary with the customer's registered email ID.
+
+### AC-07-08
+
+**Given:** the payment is unsuccessful.
+
+**When:** the payment attempt fails.
+
+**Then:** the system should not place the order.
+
+### AC-07-09
+
+**Given:** the payment attempt is unsuccessful.
+
+**When:** the payment fails.
+
+**Then:** the system should display an appropriate "Payment Failed" or error message.
+
+### AC-07-10
+
+**Given:** the payment attempt has failed.
+
+**When:** the customer chooses to retry the payment.
+
+**Then:** the system should allow the customer to return to the Delivery Address page and retry the payment.
+
+---
+
+## US-08 Order Processing Notification
+
+### AC-08-01
+
+**Given:** an order has been successfully placed.
+
+**When:** order processing starts.
+
+**Then:** the system should notify the Store Executive.
+
+### AC-08-02
+
+**Given:** an order has been successfully placed.
+
+**When:** order processing starts.
+
+**Then:** the system should notify the Delivery Partner.
+
+### AC-08-03
+
+**Given:** an order has been successfully placed.
+
+**When:** the Store Executive is notified.
+
+**Then:** the Store Executive should receive the order details required for packing.
+
+### AC-08-04
+
+**Given:** an order has been successfully placed.
+
+**When:** the Delivery Partner is notified.
+
+**Then:** the Delivery Partner should receive the order details required for delivery.
+
+### AC-08-05
+
+**Given:** an order has been successfully placed.
+
+**When:** the order confirmation is completed.
+
+**Then:** order processing should start.
+
+---
+
+## US-09 Order Tracking
+
+### AC-09-01
+
+**Given:** the customer has successfully placed an order.
+
+**When:** the order is confirmed.
+
+**Then:** the system should provide the Order ID.
+
+### AC-09-02
+
+**Given:** the customer has an Order ID.
+
+**When:** the customer opens the Tracking tab.
+
+**Then:** the system should display the order tracking option.
+
+### AC-09-03
+
+**Given:** the customer is on the Tracking tab.
+
+**When:** the customer enters the Order ID.
+
+**Then:** the system should retrieve the corresponding order.
+
+### AC-09-04
+
+**Given:** a valid Order ID has been entered.
+
+**When:** the system retrieves the order.
+
+**Then:** the system should display the current delivery status.
+
+### AC-09-05
+
+**Given:** the customer is tracking an order.
+
+**When:** the order status is updated.
+
+**Then:** the tracking information should display the applicable delivery status.
+
+---
+
+## US-10 Delivery Status Update
+
+### AC-10-01
+
+**Given:** the Delivery Partner is handling an order.
+
+**When:** the delivery status changes.
+
+**Then:** the Delivery Partner should update the delivery status.
+
+### AC-10-02
+
+**Given:** the Delivery Partner has updated the delivery status.
+
+**When:** the status update is saved.
+
+**Then:** the Store Executive should be able to view the updated delivery status.
+
+### AC-10-03
+
+**Given:** the delivery status has been updated.
+
+**When:** the customer checks the order tracking.
+
+**Then:** the customer should be able to view the updated delivery status.
+
+### AC-10-04
+
+**Given:** the product has been successfully delivered.
+
+**When:** the Delivery Partner updates the delivery status.
+
+**Then:** the system should update the status to "Delivered".
+
+### AC-10-05
+
+**Given:** a relevant delivery status has changed.
+
+**When:** the status update is recorded.
+
+**Then:** the system should notify the Store Executive and Delivery Partner.
+
+### AC-10-06
+
+**Given:** the customer is unavailable during delivery.
+
+**When:** the Delivery Partner attempts the delivery.
+
+**Then:** the Delivery Partner should attempt to contact the customer.
+
+### AC-10-07
+
+**Given:** the customer is unavailable during the delivery attempt.
+
+**When:** the applicable process requires another attempt.
+
+**Then:** the delivery should be reattempted according to the applicable process.
+
+### AC-10-08
+
+**Given:** the specified delivery attempts have failed.
+
+**When:** the applicable failed-delivery process is completed.
+
+**Then:** the product should be returned to the store.
+
+### AC-10-09
+
+**Given:** the product has been returned to the store.
+
+**When:** the return is recorded.
+
+**Then:** the system should cancel the order.
+
+### AC-10-10
+
+**Given:** the order is cancelled because the customer was unavailable.
+
+**When:** the cancellation is processed.
+
+**Then:** the payment should not be refunded.
+
+---
+
+## US-11 Return Refund or Exchange
+
+### AC-11-01
+
+**Given:** the customer has a purchased product.
+
+**When:** the customer selects "Return/Refund".
+
+**Then:** the system should start the return/refund process.
+
+### AC-11-02
+
+**Given:** the customer has selected "Return/Refund".
+
+**When:** the customer starts the request.
+
+**Then:** the system should check the return/refund eligibility period.
+
+### AC-11-03
+
+**Given:** the return/refund eligibility period has expired.
+
+**When:** the customer attempts to submit a return/refund request.
+
+**Then:** the system should display an appropriate message.
+
+### AC-11-04
+
+**Given:** the product is within the return/refund eligibility period.
+
+**When:** the eligibility check is successful.
+
+**Then:** the system should allow the customer to proceed to the Return/Refund page.
+
+### AC-11-05
+
+**Given:** the product is eligible for return/refund.
+
+**When:** the customer reaches the Return/Refund page.
+
+**Then:** the customer should be able to select Return, Refund, or Exchange.
+
+### AC-11-06
+
+**Given:** the customer has selected Return, Refund, or Exchange.
+
+**When:** the customer submits the request.
+
+**Then:** the customer should be able to provide a reason.
+
+### AC-11-07
+
+**Given:** supporting evidence is required for the request.
+
+**When:** the customer submits the request.
+
+**Then:** the customer should be able to upload the required evidence.
+
+### AC-11-08
+
+**Given:** the customer has provided the required request details.
+
+**When:** the customer submits the request.
+
+**Then:** the system should submit the return/refund/exchange request.
+
+### AC-11-09
+
+**Given:** a return/refund/exchange request has been submitted.
+
+**When:** the request is recorded.
+
+**Then:** the system should notify the Store Executive and Delivery Partner.
+
+### AC-11-10
+
+**Given:** the Store Executive has received a return/refund/exchange request.
+
+**When:** the Store Executive reviews the request.
+
+**Then:** the Store Executive should be able to approve or reject the request.
+
+### AC-11-11
+
+**Given:** a product return has been approved and collection is required.
+
+**When:** the return collection is initiated.
+
+**Then:** the Delivery Partner should collect the product.
+
+### AC-11-12
+
+**Given:** the returned product has been collected.
+
+**When:** the product reaches the required verification stage.
+
+**Then:** the returned product should be checked.
+
+### AC-11-13
+
+**Given:** the returned product has been checked.
+
+**When:** the Store Executive completes the review.
+
+**Then:** the Store Executive should process the applicable return, refund, or exchange.
+
+---
+
+## US-12 Return Refund Status Tracking
+
+### AC-12-01
+
+**Given:** the customer has a return/refund request.
+
+**When:** the customer opens the Tracking tab.
+
+**Then:** the system should display the tracking option.
+
+### AC-12-02
+
+**Given:** the customer is on the Tracking tab.
+
+**When:** the customer enters the existing Order ID.
+
+**Then:** the system should retrieve the corresponding return/refund request.
+
+### AC-12-03
+
+**Given:** a valid Order ID has been entered.
+
+**When:** the system retrieves the return/refund request.
+
+**Then:** the system should display the current return/refund status.
+
+### AC-12-04
+
+**Given:** a return/refund request has been submitted.
+
+**When:** the request is created.
+
+**Then:** the system should display the status as "Return/Refund Requested".
+
+### AC-12-05
+
+**Given:** a return/refund request is being processed.
+
+**When:** the request moves through the applicable stages.
+
+**Then:** the system should update the status through the approval, collection, and refund stages.
+
+### AC-12-06
+
+**Given:** the return/refund/exchange process has been completed.
+
+**When:** the applicable final action is completed.
+
+**Then:** the system should display "Refund Provided" or "Exchange Completed".
+
+### AC-12-07
+
+**Given:** a return/refund request is in progress.
+
+**When:** the request moves to the next stage.
+
+**Then:** the system should update the status accordingly.
