@@ -1,0 +1,63 @@
+# UC-08 Return / Refund Request
+
+## Use Case ID
+UC-08
+
+## Use Case Name
+Return / Refund Request
+
+## Description
+This use case describes how a customer raises a return or refund request for a purchased product.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has successfully logged in.
+- Customer has a purchased order.
+- Product is within the applicable return/refund eligibility period.
+
+## Trigger
+Customer wants to return or request a refund for a purchased product.
+
+## Main Flow
+1. Customer navigates to the purchased product or order details.
+2. Customer selects the **Return/Refund** option.
+3. System displays the return/refund request form.
+4. Customer provides the required details.
+5. Customer enters the reason for the return/refund.
+6. Customer uploads supporting images, if required.
+7. Customer submits the request.
+8. System validates the return/refund eligibility.
+9. System creates the return/refund request.
+10. System notifies the Store Executive and Delivery Partner.
+11. System makes the return/refund request status available for tracking.
+
+## Alternate Flow
+
+### A1: Return/Refund Eligibility Period Expired
+1. Customer selects the **Return/Refund** option.
+2. System checks the applicable eligibility period.
+3. System identifies that the eligibility period has expired.
+4. System prevents the customer from submitting the request.
+5. System displays an appropriate message.
+
+### A2: Required Details Missing
+1. Customer submits the return/refund request without providing the required information.
+2. System identifies the missing information.
+3. System displays the required validation message.
+4. Customer provides the missing information.
+5. Customer resubmits the request.
+
+## Postconditions
+- Return/refund request is successfully created when eligible.
+- Store Executive and Delivery Partner are notified.
+- Customer can track the request status.
+
+## Business Rules
+- Return/refund requests are allowed only within the applicable eligibility period.
+- Customer must provide the required return/refund details.
+- Supporting images must be provided when required by the return/refund process.

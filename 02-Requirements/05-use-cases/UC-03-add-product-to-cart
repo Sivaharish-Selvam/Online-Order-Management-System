@@ -1,0 +1,57 @@
+# UC-03 Add Product to Cart
+
+## Use Case ID
+UC-03
+
+## Use Case Name
+Add Product to Cart
+
+## Description
+This use case describes how a logged-in customer adds an available product to the cart and proceeds to purchase the selected product.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has successfully logged in.
+- Product is available in stock.
+- Product quantity is available for purchase.
+
+## Trigger
+Customer selects the **Add to Cart** option for an available product.
+
+## Main Flow
+1. Customer selects an available product.
+2. Customer selects the required quantity.
+3. Customer selects **Add to Cart**.
+4. System adds the selected product and quantity to the cart.
+5. System displays the updated cart details.
+6. Customer reviews the product, quantity, and cart details.
+7. Customer selects the product and chooses the option to proceed with the purchase.
+8. System navigates the customer to the delivery address section.
+
+## Alternate Flow
+
+### A1: Requested Quantity Not Available
+1. Customer selects a quantity greater than the available stock.
+2. System displays an appropriate availability message.
+3. Customer reduces the quantity to the available quantity.
+4. System updates the cart with the selected quantity.
+
+### A2: Customer Removes Product from Cart
+1. Customer views the cart.
+2. Customer selects the **Remove** option for a product.
+3. System removes the product from the cart.
+4. System displays the updated cart.
+
+## Postconditions
+- Selected product is added to the customer's cart.
+- Customer can proceed with the purchase.
+
+## Business Rules
+- Only logged-in customers can add products to the cart.
+- Only in-stock products can be added to the cart.
+- The selected quantity must not exceed the available stock.

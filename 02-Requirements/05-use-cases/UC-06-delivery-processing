@@ -1,0 +1,60 @@
+# UC-06 Delivery Processing
+
+## Use Case ID
+UC-06
+
+## Use Case Name
+Delivery Processing
+
+## Description
+This use case describes how the Store Executive processes a confirmed order and how the Delivery Partner delivers the product to the customer.
+
+## Primary Actor
+Store Executive
+
+## Secondary Actor
+Delivery Partner
+
+## Preconditions
+- Order has been successfully created.
+- Payment has been successfully confirmed.
+- Store Executive has received the order notification.
+- Valid customer delivery information is available.
+
+## Trigger
+Store Executive receives a successfully placed order.
+
+## Main Flow
+1. Store Executive receives the order notification.
+2. Store Executive reviews the order details.
+3. Store Executive prepares the product for delivery.
+4. System updates the order status to the applicable processing stage.
+5. Order is handed over to the Delivery Partner.
+6. Delivery Partner receives the delivery details.
+7. Delivery Partner proceeds to the customer's delivery address.
+8. Delivery Partner delivers the product to the customer.
+9. Delivery Partner updates the delivery status.
+10. System updates the order status to **Delivered**.
+
+## Alternate Flow
+
+### A1: Delivery Attempt Unsuccessful
+1. Delivery Partner reaches the customer's delivery address.
+2. Delivery Partner is unable to complete the delivery.
+3. Delivery Partner updates the delivery status.
+4. System updates the order status accordingly.
+5. Delivery Partner retries the delivery based on the applicable process.
+
+### A2: Order Cannot Be Processed by Store Executive
+1. Store Executive identifies an issue with the order or product.
+2. Store Executive updates the applicable order status.
+3. System reflects the updated status.
+4. Appropriate action is taken to resolve the issue.
+
+## Postconditions
+- Product is successfully delivered to the customer.
+- System updates the order status to **Delivered**.
+
+## Business Rules
+- Delivery Partner can process delivery only for successfully placed orders.
+- Order status must be updated at the applicable delivery stages.

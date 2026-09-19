@@ -1,0 +1,66 @@
+# UC-05 Online Payment
+
+## Use Case ID
+UC-05
+
+## Use Case Name
+Online Payment
+
+## Description
+This use case describes how a customer completes an online payment through the integrated Payment Gateway to place an order successfully.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+Payment Gateway
+
+## Preconditions
+- Customer has successfully logged in.
+- Customer has selected an available product.
+- Valid delivery information has been provided.
+- Payment Gateway has been successfully onboarded and integrated with the application.
+
+## Trigger
+Customer selects the **Payment** option after providing valid delivery information.
+
+## Main Flow
+1. Customer selects the **Payment** option.
+2. System redirects the customer to the Payment Gateway.
+3. Customer provides the required payment details.
+4. Customer submits the payment.
+5. Payment Gateway processes the payment.
+6. Payment Gateway confirms the successful payment to the system.
+7. System creates the order.
+8. System generates a unique Order ID.
+9. System displays the Order Summary containing the Order ID and relevant order details.
+10. System sends the order summary notification to the customer's registered email address and account.
+11. System notifies the Store Executive about the successful order.
+
+## Alternate Flow
+
+### A1: Payment Failure
+1. Customer submits the payment.
+2. Payment Gateway fails to process the payment.
+3. Payment Gateway sends the failed payment status to the system.
+4. System does not create the order.
+5. System displays the payment failure message.
+6. Customer can retry the payment.
+
+### A2: Customer Cancels Payment
+1. Customer is redirected to the Payment Gateway.
+2. Customer cancels the payment.
+3. Payment Gateway sends the payment cancellation status to the system.
+4. System does not create the order.
+5. Customer can retry the payment.
+
+## Postconditions
+- On successful payment, the order is created.
+- Unique Order ID is generated.
+- Order Summary is available.
+- Customer receives the order confirmation.
+- Store Executive is notified.
+
+## Business Rules
+- Order must not be created unless the Payment Gateway confirms successful payment.
+- A unique Order ID must be generated for every successfully placed order.

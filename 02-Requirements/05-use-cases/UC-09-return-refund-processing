@@ -1,0 +1,62 @@
+# UC-09 Return / Refund Processing
+
+## Use Case ID
+UC-09
+
+## Use Case Name
+Return / Refund Processing
+
+## Description
+This use case describes how the Store Executive and Delivery Partner process a customer's return/refund request after it has been raised.
+
+## Primary Actor
+Store Executive
+
+## Secondary Actor
+Delivery Partner
+
+## Preconditions
+- Customer has successfully raised an eligible return/refund request.
+- Store Executive and Delivery Partner have been notified.
+- Customer delivery information is available.
+
+## Trigger
+Store Executive receives a return/refund request.
+
+## Main Flow
+1. Store Executive reviews the return/refund request.
+2. Store Executive coordinates with the Delivery Partner for product collection.
+3. Delivery Partner receives the collection details.
+4. Delivery Partner visits the customer's delivery address.
+5. Delivery Partner collects the product from the customer.
+6. Delivery Partner returns the product to the Store Executive.
+7. Store Executive verifies the returned product.
+8. Store Executive determines the applicable action based on the verification.
+9. Store Executive processes the **Return, Refund, or Exchange**, as applicable.
+10. System updates the return/refund status.
+11. Customer can view the updated status through the existing Tracking option.
+
+## Alternate Flow
+
+### A1: Product Verification Failed
+1. Store Executive receives the returned product.
+2. Store Executive verifies the product.
+3. Store Executive identifies that the product does not meet the applicable return/refund conditions.
+4. Store Executive updates the request status.
+5. System displays the updated status to the customer.
+
+### A2: Product Collection Unsuccessful
+1. Delivery Partner visits the customer's address.
+2. Delivery Partner is unable to collect the product.
+3. Delivery Partner updates the collection status.
+4. System reflects the updated status.
+5. Delivery Partner retries the collection based on the applicable process.
+
+## Postconditions
+- Eligible return/refund/exchange is successfully processed.
+- Return/refund status is updated.
+- Customer can track the status through the existing Tracking option.
+
+## Business Rules
+- Returned products must be verified before processing a return, refund, or exchange.
+- Return/refund/exchange must be processed according to the applicable eligibility and verification rules.

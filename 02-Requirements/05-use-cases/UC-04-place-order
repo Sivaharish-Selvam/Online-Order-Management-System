@@ -1,0 +1,60 @@
+# UC-04 Place Order
+
+## Use Case ID
+UC-04
+
+## Use Case Name
+Place Order
+
+## Description
+This use case describes how a customer provides valid delivery information and proceeds with an order after selecting a product.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has successfully logged in.
+- Customer has selected an available product.
+- Customer has selected the required quantity.
+- Customer has proceeded to the delivery address section.
+
+## Trigger
+Customer wants to place an order for the selected product.
+
+## Main Flow
+1. Customer navigates to the **Delivery Address** section.
+2. Customer enters a valid name.
+3. Customer enters the delivery address.
+4. Customer enters a valid phone number.
+5. Customer provides the required ZIP/PIN code.
+6. System validates the delivery information.
+7. Customer reviews the order details.
+8. Customer selects the **Payment** option.
+9. System proceeds to the payment process.
+
+## Alternate Flow
+
+### A1: Invalid Delivery Information
+1. Customer enters invalid or incomplete delivery information.
+2. System identifies the invalid information.
+3. System displays an appropriate validation message.
+4. Customer corrects the required information.
+5. System validates the updated information.
+
+### A2: Delivery Address Outside Supported Territory
+1. Customer enters a ZIP/PIN code.
+2. System validates the ZIP/PIN code.
+3. System identifies that the location is outside the supported delivery territory.
+4. System displays an appropriate message.
+5. Customer provides a valid supported delivery address.
+
+## Postconditions
+- Valid delivery information is captured.
+- Customer is moved to the payment process.
+
+## Business Rules
+- Customer must provide a valid delivery name, address, phone number, and ZIP/PIN code.
+- Delivery must be within the supported delivery territory.

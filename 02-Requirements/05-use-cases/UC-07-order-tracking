@@ -1,0 +1,48 @@
+# UC-07 Order Tracking
+
+## Use Case ID
+UC-07
+
+## Use Case Name
+Order Tracking
+
+## Description
+This use case describes how a customer tracks the current status of an order using the Order ID.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has a successfully placed order.
+- Customer has a valid Order ID.
+
+## Trigger
+Customer wants to check the current status of an order.
+
+## Main Flow
+1. Customer navigates to the **Tracking** section.
+2. Customer enters the Order ID.
+3. Customer submits the Order ID.
+4. System validates the Order ID.
+5. System retrieves the corresponding order details.
+6. System displays the current order status.
+7. Customer views the applicable status, such as **Processing, Shipped, Out for Delivery, or Delivered**.
+
+## Alternate Flow
+
+### A1: Invalid Order ID
+1. Customer enters an invalid Order ID.
+2. System cannot find the corresponding order.
+3. System displays an appropriate message.
+4. Customer enters the correct Order ID.
+
+## Postconditions
+- Customer can view the current status of the order.
+- Customer can monitor the order until delivery is completed.
+
+## Business Rules
+- Customer must provide a valid Order ID to track an order.
+- System must display the latest available order status.
