@@ -1,0 +1,59 @@
+# UC-01 Customer Login
+
+## Use Case ID
+UC-01
+
+## Use Case Name
+Customer Login
+
+## Description
+This use case describes how a registered customer logs into the application using valid credentials to access customer-specific features.
+
+## Primary Actor
+Customer
+
+## Secondary Actor
+None
+
+## Preconditions
+- Customer has a registered account.
+- Customer has a valid registered email address and password.
+
+## Trigger
+Customer wants to access the application using their registered account.
+
+## Main Flow
+1. Customer opens the application.
+2. Customer selects the **Login** option.
+3. Customer enters the registered email address.
+4. Customer enters the password.
+5. Customer submits the login details.
+6. System validates the credentials.
+7. System successfully authenticates the customer.
+8. System provides access to the customer's account.
+
+## Alternate Flow
+
+### A1: Forgot Password
+1. Customer selects the **Forgot Password** option.
+2. Customer enters the registered email address.
+3. System sends an OTP to the registered email address.
+4. Customer enters the OTP.
+5. System validates the OTP.
+6. Customer creates a new password.
+7. Customer logs in using the registered email address and new password.
+8. System provides access to the customer's account.
+
+### A2: Invalid Credentials
+1. Customer enters an incorrect email address or password.
+2. System identifies the credentials as invalid.
+3. System displays an appropriate error message.
+4. Customer re-enters the login credentials.
+
+## Postconditions
+- Customer is successfully authenticated.
+- Customer can access features available to logged-in users.
+
+## Business Rules
+- Customer must provide valid login credentials.
+- Password must contain at least one uppercase letter, one number, and one special character when creating or resetting the password.
