@@ -1,0 +1,64 @@
+# 3.1 As-Is Process (Current State)
+
+## Process Overview
+
+Currently, customers place product orders through the Customer Service Center using a manual voice-based process.
+
+## AS-IS Process Flow
+
+1. Customer contacts the Customer Service Center through a phone call.
+2. Customer communicates the required product details to the Customer Service Executive through the call.
+3. Customer provides the required product information, such as:
+   - Product name
+   - Quantity
+   - Size
+   - Other required product details
+4. Customer Service Executive searches for the requested product in the Product Directory.
+5. Customer Service Executive confirms the product availability and relevant details with the customer.
+6. Customer provides the required delivery information through the call.
+7. Customer Service Executive communicates the order details to the Store.
+8. Store Executive receives and processes the order.
+9. Store Executive prepares and packages the product.
+10. Product is handed over for delivery to the customer's provided address.
+11. Delivery Partner delivers the product to the customer.
+12. If the customer wants to track the order, the customer again contacts the Customer Service Center through a phone call.
+13. Customer Service Executive checks the order status and communicates the current status to the customer.
+
+## Pain Points
+
+### 1. High Manual Effort
+
+The ordering process depends heavily on Customer Service Executives for product search, order capture, and status updates.
+
+### 2. High Order Processing Time
+
+Even small product orders require manual interaction through a phone call, which increases the time required to process each order.
+
+### 3. Limited Order Handling During Peak Periods
+
+During high-demand or rush periods, Customer Service Executives may not be able to handle a large number of orders efficiently because each order requires manual interaction.
+
+### 4. Additional Staffing Requirement
+
+Handling increased order volumes may require the company to recruit additional Customer Service Executives, which can increase operational costs and may exceed the available budget.
+
+### 5. Manual Data Entry Errors
+
+Since product and order details are communicated verbally, errors or discrepancies can occur in information such as:
+
+- Product quantity
+- Product size
+- Product selection
+- Customer delivery information
+
+### 6. Limited Customer Transparency
+
+Customers do not have direct visibility into their order status and need to contact the Customer Service Center to obtain updates.
+
+### 7. Limited Online Customer Engagement
+
+Customers cannot independently search, select, purchase, or track products through an online application.
+
+### 8. Dependency on Customer Service
+
+Customers depend on Customer Service Executives for multiple activities, including product availability, order placement, and order tracking.

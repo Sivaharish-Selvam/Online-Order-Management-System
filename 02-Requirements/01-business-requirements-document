@@ -1,0 +1,43 @@
+# 2.1 Business Requirements Document (BRD)
+
+| **ID** | **Requirement** | **Priority** |
+|---|---|---|
+| BR-01 | Customer can log in to the portal using valid credentials | High |
+| BR-02 | Customer can search and purchase products online | High |
+| BR-03 | Customer can choose the product quantity and based on availability can purchase a product | High |
+| BR-04 | Customer can provide name, delivery address and phone number during checkout | High |
+| BR-05 | Customer can make online payments for purchases | High |
+| BR-06 | Customer can view the order summary after purchase | High |
+| BR-07 | Customer can track orders using the Order ID | High |
+| BR-08 | Customer can request product return/refund | High |
+| BR-09 | Customer can view the return/refund status with existing order id | High |
+
+# Detailed Business Requirements
+
+### BR-01 - User Login
+
+**Description:** Customers can access the online portal through sign in and log in using valid email and password credentials and login should only able to purchase products.
+
+### BR-02 - Product Search & Purchase
+
+**Description:** Customer can search for products using the search bar, add products to the cart for later purchase, or use the Buy option to purchase products directly.
+
+### BR-03 - Product Stock Availability
+
+**Description:** Customer can select the required quantity and check the availability of a product. Only products that are in stock can be purchased using the Buy option.
+
+### BR-04 - Delivery Information
+
+**Description:** Customer should provide the required delivery information, including name, address, and phone number, to place an order.
+
+### BR-05 - Online Payment
+
+**Description:** Customer can make payment through the payment gateway. Upon successful payment, the order will be placed, and a confirmation notification will be sent to the customer’s registered email address and user account.
+
+### BR-06 & 07 - Order Summary and Tracking
+
+**Description:** Customer can view their order details in the Order Summary and search for an order using the Order ID in the Tracking section to view the current delivery status of the product.
+
+### BR-08 & 09 - Return / Refund
+
+**Description:** When a customer raises a return or refund request, the Delivery Partner and Store Executive should be notified to take the necessary actions. The customer can track the status of the return or refund request using the existing tracking option.
